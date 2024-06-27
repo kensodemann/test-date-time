@@ -1,20 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <h1>Simple Date</h1>
+  <pre>'2024-06-27'</pre>
+
+  <ul>
+    <li><strong>JavaScript</strong> {{d1}}</li>
+    <li><strong>Date FNS Parsed</strong> {{df1}}</li>
+    <li><strong>Date FNS Parsed and Normalized</strong> {{dfn1}}</li>
+  </ul>
+
+  <h1>UTC Specified Date</h1>
+  <pre>'2024-06-27T03:33:23Z'</pre>
+
+  <ul>
+    <li><strong>JavaScript</strong> {{d2}}</li>
+    <li><strong>Date FNS Parsed</strong> {{df2}}</li>
+    <li><strong>Date FNS Parsed and Normalized</strong> {{dfn2}}</li>
+  </ul>
+
+  <h1>Eastern Daylight Specified Date</h1>
+  <pre>'2024-06-27T03:33:23-04:00'</pre>
+
+  <ul>
+    <li><strong>JavaScript</strong> {{d3}}</li>
+    <li><strong>Date FNS Parsed</strong> {{df3}}</li>
+    <li><strong>Date FNS Parsed and Normalized</strong> {{dfn3}}</li>
+  </ul>
+
+  <h1>Middle East Timezone Specified Date</h1>
+  <pre>'2024-06-27T03:33:23+04:00'</pre>
+
+  <ul>
+    <li><strong>JavaScript</strong> {{d4}}</li>
+    <li><strong>Date FNS Parsed</strong> {{df4}}</li>
+    <li><strong>Date FNS Parsed and Normalized</strong> {{dfn4}}</li>
+  </ul>
 </ion-content>
